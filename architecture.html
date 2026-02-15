@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZELDA Cognitive Architecture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container nav-bar">
+            <a class="logo" href="index.html">ZELDA</a>
+            <button class="nav-toggle" aria-label="Open navigation menu"><span class="fa-solid fa-bars"></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="architecture.html" class="active">Architecture</a></li>
+                <li><a href="binder.html">Design Binder</a></li>
+                <li><a href="ethics.html">Ethics & Philosophy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="licensing.html">Licensing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero small-hero">
+        <div class="container hero-content">
+            <h1>Cognitive Architecture</h1>
+            <p class="tagline">The seven-layer foundation of ZELDA’s thinking engine</p>
+        </div>
+    </section>
+    <main>
+        <section class="section architecture-diagram">
+        <div class="container">
+            <!-- Simplified schematic representation without external images -->
+            <div class="diagram-graphic">
+                <div class="diagram-layer">Layer 1: Input &amp; Context Boundary</div>
+                <div class="diagram-layer">Layer 2: Cognitive Core</div>
+                <div class="diagram-layer">Layer 3: Reflection &amp; Audit</div>
+                <div class="diagram-layer">Layer 4: Ethical Engine</div>
+                <div class="diagram-layer">Layer 5: Decision Authority</div>
+                <div class="diagram-layer">Layer 6: Execution Interface</div>
+                <div class="diagram-layer">Layer 7: Oversight &amp; Update</div>
+            </div>
+            <p class="caption">A simplified schematic of ZELDA’s layered cognitive architecture.</p>
+        </div>
+        </section>
+        
+        <!-- Layers Section -->
+        <section class="section layers">
+            <div class="container">
+                <h2>The Seven Layers</h2>
+                <p>Each layer in ZELDA’s architecture has a distinct purpose, clear responsibilities and explicit boundaries.  By compartmentalising cognition in this way, the system avoids hidden feedback loops, respects user consent and ensures that ethical constraints are applied before any output is delivered.  Explore each layer below:</p>
+                <div class="layer-grid">
+                    <!-- Layer 1 -->
+                    <div class="layer-card">
+                        <h3>Layer 1: Input &amp; Context Boundary</h3>
+                        <p><strong>Purpose:</strong> Control what the system is allowed to know.</p>
+                        <p><strong>Responsibilities:</strong> Accept user input and explicitly scoped context, enforce consent boundaries and prevent hidden state accumulation.</p>
+                        <p><strong>Key constraint:</strong> No long‑term user profiling or silent data harvesting — reflecting privacy concerns about AI systems that reuse personal data without consent【709742148798799†L82-L97】.</p>
+                    </div>
+                    <!-- Layer 2 -->
+                    <div class="layer-card">
+                        <h3>Layer 2: Cognitive Core</h3>
+                        <p><strong>Purpose:</strong> Generate candidate understandings and actions.</p>
+                        <p><strong>Responsibilities:</strong> Interpret inputs, generate hypotheses and produce candidate action plans.</p>
+                        <p><strong>Design characteristics:</strong> Time‑aware reasoning across multiple horizons and non‑executable candidate generation to keep planning separate from execution.</p>
+                    </div>
+                    <!-- Layer 3 -->
+                    <div class="layer-card">
+                        <h3>Layer 3: Reflection &amp; Audit</h3>
+                        <p><strong>Purpose:</strong> Detect errors, contradictions and risks.</p>
+                        <p><strong>Responsibilities:</strong> Evaluate candidate actions for coherence, identify contradictions, flag ethical or safety concerns and ensure evidence thresholds are met.</p>
+                        <p><strong>Hard limits:</strong> A fixed iteration count to avoid infinite self‑reflection and tool spam; explicit exit conditions stop the loop when conditions are satisfied【669129473536362†L292-L359】.</p>
+                    </div>
+                    <!-- Layer 4 -->
+                    <div class="layer-card">
+                        <h3>Layer 4: Ethical Constraint Engine</h3>
+                        <p><strong>Purpose:</strong> Enforce moral and design invariants.</p>
+                        <p><strong>Structure:</strong> A hybrid of non‑negotiable constraints and priority‑weighted ethical principles that veto manipulative, harmful or coercive behaviours.</p>
+                        <p><strong>Example constraint:</strong> The system cannot manipulate user behaviour — a principle supported by scholarship on the importance of respecting user autonomy and avoiding hidden persuasion【813286105083797†L170-L183】【538976851382273†L392-L437】.</p>
+                    </div>
+                    <!-- Layer 5 -->
+                    <div class="layer-card">
+                        <h3>Layer 5: Decision Authority &amp; Commit</h3>
+                        <p><strong>Purpose:</strong> Terminate deliberation and commit to one outcome.</p>
+                        <p><strong>Responsibilities:</strong> Select a satisficing (good‑enough) action rather than a theoretically optimal one; enforce finality; prevent post‑hoc rationalisation.</p>
+                        <p><strong>Mechanism:</strong> Satisficing thresholds ensure that decisions occur within defined time and quality bounds.</p>
+                    </div>
+                    <!-- Layer 6 -->
+                    <div class="layer-card">
+                        <h3>Layer 6: Execution Interface</h3>
+                        <p><strong>Purpose:</strong> Translate decisions into outputs or actions.</p>
+                        <p><strong>Characteristics:</strong> Minimal transformation, deterministic mapping from decisions to outputs, and an “output‑only” posture that prevents hidden side effects.</p>
+                        <p><strong>Safety posture:</strong> Execution never changes the internal ethical substrate — reflecting concerns about self‑modifying AI which can create unpredictable behaviours without oversight【904532470556632†L475-L593】.</p>
+                    </div>
+                    <!-- Layer 7 -->
+                    <div class="layer-card">
+                        <h3>Layer 7: Oversight &amp; Update Plane</h3>
+                        <p><strong>Purpose:</strong> Preserve long‑term coherence and authority.</p>
+                        <p><strong>Authorities:</strong> Only the creators or authorised overseers may modify core cognition, update ethical constraints or audit historical decisions.</p>
+                        <p><strong>Capabilities:</strong> Manage version control, apply kill‑switches, prevent drift and ensure that any changes are transparent and reversible【904532470556632†L475-L593】【361354759294151†L571-L585】.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Amber Flint.  All rights reserved.  Built for transparency and ethical AI.</p>
+            <p class="published-on">Published on: February 14, 2026</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="architecture.html" class="active">Architecture</a></li>
+                <li><a href="binder.html">Design Binder</a></li>
+                <li><a href="ethics.html">Ethics & Philosophy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="licensing.html">Licensing</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
